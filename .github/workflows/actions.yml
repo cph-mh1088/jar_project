@@ -20,7 +20,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       -
-
         name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
       -
@@ -39,5 +38,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/ci_cd_javalin_demo:latest
+          # Change this to match dockerhub image name
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/first_time_practice:latest
 
