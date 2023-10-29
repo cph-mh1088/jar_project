@@ -22,7 +22,7 @@ public class DogController {
         if (dog != null) {
             ctx.json(dog);
         } else {
-            ctx.status(404).result("Dog not found");
+            ctx.status(404).result("model.Dog not found");
         }
     }
 
@@ -44,7 +44,7 @@ public class DogController {
         if (dogDTOMap.containsKey(id)) {
             dogDTOMap.put(id, updatedDog);
         } else {
-            ctx.status(404).result("Dog not found");
+            ctx.status(404).result("model.Dog not found");
         }
     }
 
@@ -54,7 +54,7 @@ public class DogController {
         if (dogDTOMap.containsKey(id)) {
             dogDTOMap.remove(id);
         } else {
-            ctx.status(404).result("Dog not found");
+            ctx.status(404).result("model.Dog not found");
         }
     }
 }
