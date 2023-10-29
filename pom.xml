@@ -14,7 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- DATABASE PROJECT NAME ON SERVER  -->
-        <db.name>jar-db</db.name>
+        <db.name>jar</db.name>
         <javalin.port>7070</javalin.port>
         <!--        DEPENDENCY VERSIONS-->
         <maven.compiler.source>17</maven.compiler.source>
