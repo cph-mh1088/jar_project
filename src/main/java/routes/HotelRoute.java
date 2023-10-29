@@ -1,8 +1,9 @@
 package routes;
 
-import dk.lyngby.controller.impl.HotelController;
-import dk.lyngby.security.RouteRoles;
+
+import controller.impl.HotelController;
 import io.javalin.apibuilder.EndpointGroup;
+import security.RouteRoles;
 
 import static io.javalin.apibuilder.ApiBuilder.*;
 

@@ -1,6 +1,7 @@
 package dao.impl;
 
-import dk.lyngby.dto.RoomDto;
+
+import dto.RoomDto;
 
 import java.util.List;
 

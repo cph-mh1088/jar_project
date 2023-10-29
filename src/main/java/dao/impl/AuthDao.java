@@ -1,10 +1,11 @@
 package dao.impl;
 
-import dk.lyngby.exception.AuthorizationException;
-import dk.lyngby.model.Role;
-import dk.lyngby.model.User;
+
+import exception.AuthorizationException;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
+import model.Role;
+import model.User;
 
 public class AuthDao {
 

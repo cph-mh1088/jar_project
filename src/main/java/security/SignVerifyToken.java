@@ -5,8 +5,9 @@ import com.nimbusds.jose.crypto.MACSigner;
 import com.nimbusds.jose.crypto.MACVerifier;
 import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
-import dk.lyngby.dto.UserDTO;
-import dk.lyngby.exception.AuthorizationException;
+
+import dto.UserDTO;
+import exception.AuthorizationException;
 
 import java.text.ParseException;
 import java.util.Date;

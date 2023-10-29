@@ -1,9 +1,9 @@
 package dto;
 
-import dk.lyngby.model.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import model.User;
 
 import java.util.ArrayList;
 import java.util.List;

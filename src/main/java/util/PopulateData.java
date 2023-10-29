@@ -1,10 +1,10 @@
 package util;
 
 
-import dk.lyngby.config.HibernateConfig;
-import dk.lyngby.model.Hotel;
-import dk.lyngby.model.Room;
+import config.HibernateConfig;
 import jakarta.persistence.EntityManagerFactory;
+import model.Hotel;
+import model.Room;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;

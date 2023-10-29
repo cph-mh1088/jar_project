@@ -1,16 +1,17 @@
 package dao.impl;
 
 
-import dk.lyngby.model.Hotel;
-import dk.lyngby.model.Room;
+import dao.IDao;
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
+import model.Hotel;
+import model.Room;
 
 import java.util.List;
 import java.util.function.Function;
 
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
-public class RoomDao implements dk.lyngby.dao.IDao<Room, Integer> {
+public class RoomDao implements IDao<Room, Integer> {
 
     private static RoomDao instance;
     private static EntityManagerFactory emf;
@@ -35,7 +36,6 @@ public class RoomDao implements dk.lyngby.dao.IDao<Room, Integer> {
         }
     }
 
-    @Override
     public Room read(Integer integer) {
         try (var em = emf.createEntityManager()) {
             return em.find(Room.class, integer);

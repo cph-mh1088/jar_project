@@ -1,10 +1,11 @@
 package util;
 
 
-import dk.lyngby.config.HibernateConfig;
-import dk.lyngby.model.Role;
-import dk.lyngby.model.User;
+
+import config.HibernateConfig;
 import jakarta.persistence.EntityManagerFactory;
+import model.Role;
+import model.User;
 
 public class PopulateUser {
     public static void main(String[] args)  {

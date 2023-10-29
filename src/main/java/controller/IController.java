@@ -1,6 +1,6 @@
 package controller;
 
-import dk.lyngby.exception.ApiException;
+import exception.ApiException;
 import io.javalin.http.Context;
 
 public interface IController<T, D> {

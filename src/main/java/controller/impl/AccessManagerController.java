@@ -1,15 +1,16 @@
 package controller.impl;
 
-import dk.lyngby.dto.UserDTO;
-import dk.lyngby.exception.ApiException;
-import dk.lyngby.exception.AuthorizationException;
-import dk.lyngby.security.RouteRoles;
-import dk.lyngby.security.TokenFactory;
+
+import dto.UserDTO;
+import exception.ApiException;
+import exception.AuthorizationException;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 import io.javalin.security.RouteRole;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import security.RouteRoles;
+import security.TokenFactory;
 
 import java.util.Set;
 

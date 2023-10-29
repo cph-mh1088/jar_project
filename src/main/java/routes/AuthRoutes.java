@@ -1,10 +1,12 @@
 package routes;
 
-import dk.lyngby.controller.impl.AuthController;
-import dk.lyngby.security.RouteRoles;
+
+import controller.impl.AuthController;
 import io.javalin.apibuilder.EndpointGroup;
+import security.RouteRoles;
 
 import static io.javalin.apibuilder.ApiBuilder.path;
+import static io.javalin.apibuilder.ApiBuilder.post;
 
 public class AuthRoutes {
     private final AuthController userController = new AuthController();

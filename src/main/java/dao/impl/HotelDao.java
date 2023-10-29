@@ -1,13 +1,14 @@
 package dao.impl;
 
-import dk.lyngby.model.Hotel;
+import dao.IDao;
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
+import model.Hotel;
 
 import java.util.List;
 
 @NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
-public class HotelDao implements dk.lyngby.dao.IDao<Hotel, Integer> {
+public class HotelDao implements IDao<Hotel, Integer> {
 
     private static HotelDao instance;
     private static EntityManagerFactory emf;

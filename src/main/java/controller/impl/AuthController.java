@@ -2,14 +2,15 @@ package controller.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import dk.lyngby.config.HibernateConfig;
-import dk.lyngby.dao.impl.AuthDao;
-import dk.lyngby.exception.ApiException;
-import dk.lyngby.exception.AuthorizationException;
-import dk.lyngby.model.User;
-import dk.lyngby.security.TokenFactory;
+
+import config.HibernateConfig;
+import dao.impl.AuthDao;
+import exception.ApiException;
+import exception.AuthorizationException;
 import io.javalin.http.Context;
 import jakarta.persistence.EntityManagerFactory;
+import model.User;
+import security.TokenFactory;
 
 import java.util.Set;
 

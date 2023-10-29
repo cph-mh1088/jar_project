@@ -1,16 +1,17 @@
 package controller.impl;
 
-import dk.lyngby.config.HibernateConfig;
-import dk.lyngby.controller.IController;
-import dk.lyngby.dao.impl.RoomDao;
-import dk.lyngby.dao.impl.RoomListDto;
-import dk.lyngby.dto.HotelDto;
-import dk.lyngby.dto.RoomDto;
-import dk.lyngby.exception.Message;
-import dk.lyngby.model.Hotel;
-import dk.lyngby.model.Room;
+
+import config.HibernateConfig;
+import controller.IController;
+import dao.impl.RoomDao;
+import dao.impl.RoomListDto;
+import dto.HotelDto;
+import dto.RoomDto;
+import exception.Message;
 import io.javalin.http.Context;
 import jakarta.persistence.EntityManagerFactory;
+import model.Hotel;
+import model.Room;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashSet;

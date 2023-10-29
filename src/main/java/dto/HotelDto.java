@@ -1,9 +1,9 @@
 package dto;
 
-import dk.lyngby.model.Hotel;
-import dk.lyngby.model.Room;
+import model.Hotel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import model.Room;
 
 import java.util.HashSet;
 import java.util.List;

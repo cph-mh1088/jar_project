@@ -1,12 +1,13 @@
 package controller.impl;
 
-import dk.lyngby.config.HibernateConfig;
-import dk.lyngby.controller.IController;
-import dk.lyngby.dao.impl.HotelDao;
-import dk.lyngby.dto.HotelDto;
-import dk.lyngby.model.Hotel;
+
+import config.HibernateConfig;
+import controller.IController;
+import dao.impl.HotelDao;
+import dto.HotelDto;
 import io.javalin.http.Context;
 import jakarta.persistence.EntityManagerFactory;
+import model.Hotel;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;

@@ -1,8 +1,9 @@
 package routes;
 
-import dk.lyngby.controller.impl.ExceptionController;
-import dk.lyngby.exception.ApiException;
-import dk.lyngby.exception.AuthorizationException;
+
+import controller.impl.ExceptionController;
+import exception.ApiException;
+import exception.AuthorizationException;
 import io.javalin.Javalin;
 import io.javalin.apibuilder.EndpointGroup;
 import io.javalin.http.Context;

@@ -1,16 +1,17 @@
 package controller.impl;
 
-import dk.lyngby.exception.ApiException;
-import dk.lyngby.exception.AuthorizationException;
-import dk.lyngby.exception.Message;
-import dk.lyngby.exception.ValidationMessage;
-import dk.lyngby.routes.Routes;
+
+import exception.ApiException;
+import exception.AuthorizationException;
+import exception.Message;
+import exception.ValidationMessage;
 import io.javalin.http.Context;
 import io.javalin.validation.ValidationError;
 import io.javalin.validation.ValidationException;
 import org.hibernate.exception.ConstraintViolationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import routes.Routes;
 
 import java.util.ArrayList;
 import java.util.List;

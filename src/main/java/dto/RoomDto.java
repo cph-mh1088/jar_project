@@ -1,9 +1,9 @@
 package dto;
 
-import dk.lyngby.model.Room;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import model.Room;
 
 import java.math.BigDecimal;
 import java.util.List;
