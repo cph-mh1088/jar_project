@@ -76,9 +76,9 @@ public class HibernateConfig {
     }
 
     private static void hibernateIsDeployedConfiguration(Properties props) throws IOException {
-        String DB_USERNAME = System.getenv("jar");
-        String DB_PASSWORD = System.getenv("jar");
-        String CONNECTION_STR = System.getenv("jdbc:postgresql://localhost:5432/") + ApplicationConfig.getProperty("jar");
+        String DB_USERNAME = System.getenv("DB_USERNAME");
+        String DB_PASSWORD = System.getenv("DB_PASSWORD");
+        String CONNECTION_STR = System.getenv("CONNECTION_STR") + ApplicationConfig.getProperty("db.name");
         props.setProperty("hibernate.connection.url", CONNECTION_STR);
         props.setProperty("hibernate.connection.username", DB_USERNAME);
         props.setProperty("hibernate.connection.password", DB_PASSWORD);
