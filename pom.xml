@@ -20,7 +20,7 @@
 
         <db.name>jar</db.name>
         <issuer>cphbusiness.dk</issuer>
-        <javalin.port>7070</javalin.port>
+        <javalin.port>7007</javalin.port>
         <db.username>postgres</db.username>
         <db.password>postgres</db.password>
         <token.expiration.time>3600000</token.expiration.time>
